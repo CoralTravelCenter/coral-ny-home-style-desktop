@@ -1,0 +1,125 @@
+@font-face {
+  font-family: TrajanPro3Regular;
+  font-weight: 400;
+  src: url(https://font.static.useinsider.com/coraltravel/TrajanPro3Regular.ttf);
+}
+
+#particle_canvas {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  width: auto !important;
+}
+
+.menu + div {
+  display: none;
+}
+
+#predzkazaniye {
+  position: absolute;
+  height: 43px;
+  top: 50%;
+  right: 76px;
+  transform: translate(0, -50%);
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 1s;
+}
+
+#predzkazaniye .text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 43px;
+  border-radius: 12px;
+  border: 1px solid #CCC;
+  background: #E6F4FF;
+  padding: 5px 5px 5px 32px;
+  box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.06);
+
+  > * {
+    flex-shrink: 0;
+  }
+}
+
+#predzkazaniye .text.toggled {
+  background: #008C2A;
+  padding: 5px 32px;
+  color: #fff;
+}
+
+#predzkazaniye .train-container {
+  transform: scale(.3);
+  position: absolute;
+  left: -130px;
+  top: -8px;
+}
+
+#predzkazaniye .text [data-close] {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #fff;
+  top: -10px;
+  right: -10px;
+}
+
+#predzkazaniye .text [data-close]:hover {
+  background: white;
+}
+
+#predzkazaniye .text [data-close] svg {
+  width: 70%;
+  height: 70%;
+  flex-shrink: 0;
+}
+
+#predzkazaniye .text.toggled [data-action] {
+  display: none;
+}
+
+#predzkazaniye .text span {
+  font-family: TrajanPro3Regular, sans-serif;
+}
+
+#predzkazaniye .text button {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  border: none;
+  line-height: 1.3;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #0092D0;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+#predzkazaniye .text button:hover {
+  background: #66D1FF;
+}
+
+.js-hidden {
+  display: none !important;
+}
+
+
+@keyframes slide-in-right {
+  0% {
+    transform: translate(1000px, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50px, -50%);
+    opacity: 1;
+  }
+}
+

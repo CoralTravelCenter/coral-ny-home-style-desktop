@@ -1,0 +1,435 @@
+//Christmas Colors:
+//Palette 1
+$darkgold: #f00009;
+$lightgold: #ffffff;
+$lightsil: #ffffff;
+$darksil: #9c9c9c;
+$gray: #e1dfdf;
+//Palette 2
+$red: #ffffff;
+$red2: #ffffff;
+$pink: #008c2a;
+$white: #ffffff;
+$lightgreen: #a5ffa7;
+$darkgreen: #97ce8a;
+//Palette 3
+$whiteblue: #e3e4e5;
+$purple: #008c2a;
+$gray: #9297ae;
+$grayblue: #ffffff;
+$purpblue: #1a1a1a;
+
+
+.trainbody {
+   width: 234px;
+   height: 100px;
+   background: $purple;
+   border-radius: 10px 10px 10px 10px;
+   margin-top: -2rem;
+}
+
+.trainbody4 {
+   position: absolute;
+   width: 155px;
+   height: 20px;
+   background: $purpblue;
+   margin-top: 6.2em;
+   margin-left: -10px;
+   border-radius: 10px 0px 10px 10px;
+   z-index: 1;
+}
+
+.wheel {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-color: red;
+   background-image: linear-gradient(
+      45deg,
+      white 25%,
+      transparent 25.5%,
+      transparent 50%,
+      white 50.5%,
+      white 75%,
+      transparent 75.5%,
+      transparent
+   );
+   background-size: 20px 20px;
+   border-radius: 50%;
+   margin-left: 10px;
+   margin-top: 5px;
+   border: 4px solid lightyellow;
+   animation: spin 1.5s infinite linear;
+}
+
+.wheel2 {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-color: red;
+   background-image: linear-gradient(
+      45deg,
+      white 25%,
+      transparent 25.5%,
+      transparent 50%,
+      white 50.5%,
+      white 75%,
+      transparent 75.5%,
+      transparent
+   );
+   background-size: 20px 20px;
+   border-radius: 50%;
+   margin-left: 60px;
+   margin-top: 5px;
+   border: 4px solid lightyellow;
+   animation: spin 1.5s infinite linear;
+}
+
+.wheel3 {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-color: red;
+   background-image: linear-gradient(
+      45deg,
+      white 25%,
+      transparent 25.5%,
+      transparent 50%,
+      white 50.5%,
+      white 75%,
+      transparent 75.5%,
+      transparent
+   );
+   background-size: 20px 20px;
+   border-radius: 50%;
+   margin-left: 110px;
+   margin-top: 5px;
+   border: 4px solid lightyellow;
+   animation: spin 1.5s infinite linear;
+}
+
+.wheel4 {
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   background-color: red;
+   background-image: linear-gradient(
+      45deg,
+      white 25%,
+      transparent 25.5%,
+      transparent 50%,
+      white 50.5%,
+      white 75%,
+      transparent 75.5%,
+      transparent
+   );
+   background-size: 20px 20px;
+   border-radius: 50%;
+   margin-left: 160px;
+   margin-top: -25px;
+   border: 4px solid lightyellow;
+   animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(-360deg);
+   }
+}
+
+.connector {
+   position: absolute;
+   width: 190px;
+   height: 10px;
+   background: $grayblue;
+   border-radius: 10px 10px 10px 10px;
+   z-index: 1;
+   margin-top: 26px;
+   margin-left: 25px;
+   animation: mymove 0.6s infinite;
+   border: 0.5px solid black;
+}
+
+.connector2 {
+   position: absolute;
+   width: 25px;
+   height: 15px;
+   background: $purpblue;
+   margin-top: -2px;
+   border-radius: 10px 10px 10px 10px;
+}
+
+@keyframes mymove {
+   0% {
+      top: 0px;
+      left: -5px;
+   }
+   50% {
+      top: -5px;
+      left: 5px;
+   }
+   100% {
+      top: 0px;
+      left: -5px;
+   }
+}
+
+.wreath {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   border: 10px solid $darkgreen;
+   border-radius: 100%;
+   margin-top: -10px;
+   margin-left: 7px;
+   z-index: 1;
+}
+
+.bell {
+   position: absolute;
+   margin-left: 5px;
+   margin-top: -10px;
+   filter: invert(90%) sepia(100%) saturate(353%) hue-rotate(323deg)
+      brightness(96%) contrast(87%);
+}
+
+.berry1 {
+   position: absolute;
+   width: 5px;
+   height: 5px;
+   background: red;
+   border-radius: 100%;
+}
+
+.berry2 {
+   position: absolute;
+   width: 5px;
+   height: 5px;
+   background: red;
+   border-radius: 100%;
+   margin-left: 30px;
+}
+
+.berry3 {
+   position: absolute;
+   width: 5px;
+   height: 5px;
+   background: red;
+   border-radius: 100%;
+   margin-top: 30px;
+   margin-left: 7px;
+}
+
+.berry4 {
+   position: absolute;
+   width: 5px;
+   height: 5px;
+   background: red;
+   border-radius: 100%;
+   margin-top: 20px;
+   margin-left: 30px;
+}
+
+.berry5 {
+   position: absolute;
+   width: 5px;
+   height: 5px;
+   background: red;
+   border-radius: 100%;
+   margin-top: 15px;
+   margin-left: -7px;
+}
+
+.trainbody2 {
+   position: absolute;
+   width: 85px;
+   height: 70px;
+   background: $red;
+   margin-left: 3.7em;
+   border-left: 4px solid $grayblue;
+   border-bottom: 4px solid $grayblue;
+}
+
+.detail {
+   position: absolute;
+   width: 65px;
+   height: 40px;
+   background: $pink;
+   margin-left: 10px;
+   border-radius: 0% 0% 50% 50%;
+   border: 4px solid $darkgold;
+}
+
+.detail2 {
+   position: absolute;
+   width: 87px;
+   z-index: 1;
+   height: 20px;
+   background: $red2;
+   margin-top: 50px;
+}
+
+.trainbody3 {
+   position: absolute;
+   width: 90px;
+   height: 130px;
+   background: $red;
+   margin-left: 81px;
+   margin-top: -60px;
+}
+
+.roof {
+   position: absolute;
+   border-bottom: 50px solid $darkgold;
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   height: 0;
+   width: 100px;
+   margin-top: -15px;
+   margin-left: -10px;
+}
+
+.roofdetail {
+   position: absolute;
+   width: 120px;
+   height: 10px;
+   background: $lightgold;
+   border-radius: 10px 10px 10px 10px;
+   margin-top: 42px;
+   margin-left: -20px;
+   z-index: 1;
+}
+
+.window {
+   position: absolute;
+   width: 30px;
+   height: 50px;
+   background: $red2;
+   margin-top: 35px;
+   margin-left: 10px;
+   border-radius: 50% 50% 0% 0%;
+   border: 2px solid $pink;
+}
+
+.pane {
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: $pink;
+   margin-left: 14px;
+}
+
+.pane2 {
+   position: absolute;
+   width: 30px;
+   height: 2px;
+   background: $pink;
+   margin-top: 15px;
+}
+
+.pane3 {
+   position: absolute;
+   width: 30px;
+   height: 2px;
+   background: $pink;
+   margin-top: 35px;
+}
+
+.window2 {
+   position: absolute;
+   width: 30px;
+   height: 50px;
+   background: $red2;
+   margin-top: 35px;
+   margin-left: 45px;
+   border-radius: 50% 50% 0% 0%;
+   border: 2px solid $pink;
+}
+
+.pane4 {
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: $pink;
+   margin-left: 14px;
+}
+
+.pane5 {
+   position: absolute;
+   width: 30px;
+   height: 2px;
+   background: $pink;
+   margin-top: 15px;
+}
+
+.pane6 {
+   position: absolute;
+   width: 30px;
+   height: 2px;
+   background: $pink;
+   margin-top: 35px;
+}
+
+.engine {
+   position: absolute;
+   width: 10px;
+   height: 110px;
+   background: $darkgold;
+   margin-left: -0.3em;
+   margin-top: -5px;
+   border-radius: 10px 10px 10px 10px;
+}
+
+.engine2 {
+   position: absolute;
+   width: 32px;
+   height: 100px;
+   background: $darkgold;
+   border-radius: 50% 0% 0% 50%;
+   margin-left: -2em;
+   margin-top: 5px;
+}
+
+.nose {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   background: $red2;
+   border-radius: 50%;
+   margin-top: 45px;
+   margin-left: -9px;
+}
+
+.scoop {
+   width: 10px;
+   height: 0;
+   border-bottom: 50px solid $darkgold;
+   border-left: 60px solid transparent;
+   margin-left: -1.8em;
+   margin-top: 80px;
+}
+
+.smoke {
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-left: 40px solid transparent;
+   border-right: 40px solid transparent;
+   border-top: 90px solid $purple;
+   background: transparent;
+   margin-top: -3.1em;
+   margin-left: -0.5em;
+}
+
+.smoke2 {
+   position: absolute;
+   width: 85px;
+   height: 20px;
+   background: $darkgold;
+   margin-top: -6.6em;
+   margin-left: -2.7em;
+   border-radius: 5px 5px 5px 5px;
+}
