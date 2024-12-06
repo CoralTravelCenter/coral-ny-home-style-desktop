@@ -9,15 +9,13 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 .menu {
   width: auto !important;
 }
 
-.menu + div {
-  display: none;
-}
 
 #predzkazaniye {
   position: absolute;
